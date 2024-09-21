@@ -1,0 +1,42 @@
+#innerCard{
+    display: flex;
+    flex-direction: row;
+    height:100px;
+    font-size: 62px;
+    justify-content: center;
+    margin: 10px 5px 10px 10px;
+}
+#cardMain{
+    font-size: 32px;
+    font-weight: 400px;
+}
+.btn{
+    width: 90px;
+    font-weight: 600px;
+    margin-right: 15px;
+}
+.card span{
+    width: 110px;
+    justify-content: center;
+
+}
+ul{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0;
+}
+#lapCard {
+    width: 100%;        /* Set width as needed */
+    height: 200px;       /* Set height as needed */
+    overflow-y: scroll;  /* Enables vertical scrolling */
+    border: 1px solid #ccc; /* Optional: adds a border */
+    padding: 10px;       /* Optional: adds padding */
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    margin: 20px;
+}
