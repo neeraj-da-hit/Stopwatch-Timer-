@@ -2,6 +2,7 @@ let minutesL = document.getElementById("mm");
 let secondsL = document.getElementById("ss");
 let miliSecondsL = document.getElementById("ms");
 let h = document.getElementById('h');
+let btnStart = document.getElementById("btnStart");
 
 let minute = 0;
 let second = 0;
@@ -23,7 +24,7 @@ function display(){
             minute++;
         }
     }
-    console.log(minute+":"+second+":"+mili);
+   // console.log(minute+":"+second+":"+mili);
 }
 function updateTime(){
     minutesL.textContent = String(minute).padStart(2, '0');
@@ -36,13 +37,17 @@ function btnPress(v)
 {
     if(v.value == 'start'){
          timeStart();
+         btnStart.disabled = true;
+         btnStart.innerHTML.style = display;
          console.log("go");
     } else if(v.value == 'stop'){
         stopTime();
+        btnStart.disabled = false;
     } else if(v.value == 'pause'){
         pauseTime();
     } else {
         resetTime();
+        btnStart.disabled = false;
     }
 }
 function stopTime() {
